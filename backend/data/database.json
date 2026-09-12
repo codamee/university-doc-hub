@@ -1,0 +1,106 @@
+{
+  "users": [
+    {
+      "id": "usr_admin_master",
+      "name": "University Compliance Admin",
+      "email": "admin@university.edu",
+      "passwordHash": "$2a$10$z7q9tXb7zsHG4S8zsa2oOuTRrfnoCmIXzo5wb3jslb3zsPbIlFlNW",
+      "role": "Compliance Admin",
+      "department": "Governance & Institutional Compliance",
+      "status": "ACTIVE",
+      "lastLogin": "2026-09-12T06:33:38.911Z",
+      "createdAt": "2026-09-12T06:32:33.575Z",
+      "updatedAt": "2026-09-12T06:33:38.911Z"
+    },
+    {
+      "name": "Dr. Naveen Sharma",
+      "email": "naveen.sharma@university.edu",
+      "passwordHash": "$2a$10$jDZymJuk3g4l0lusWuR1WONx972SQFZ2kH7o2Z1XBxUUmnVOh0FGa",
+      "role": "Reviewer",
+      "department": "School of Computing & AI",
+      "status": "ACTIVE",
+      "lastLogin": "2026-09-12T06:33:33.010Z",
+      "id": "use_1789194773212_f6qwc3",
+      "createdAt": "2026-09-12T06:32:53.212Z",
+      "updatedAt": "2026-09-12T06:33:33.010Z"
+    }
+  ],
+  "cases": [],
+  "documents": [],
+  "extractedFields": [],
+  "validationRules": [],
+  "exceptions": [],
+  "decisionLogs": [],
+  "auditLogs": [
+    {
+      "id": "aud_1789194773215_ebytw76",
+      "timestamp": "2026-09-12T06:32:53.215Z",
+      "actorId": "use_1789194773212_f6qwc3",
+      "actorEmail": "naveen.sharma@university.edu",
+      "actorRole": "Reviewer",
+      "action": "AUTH_REGISTER",
+      "entity": "User",
+      "entityId": "use_1789194773212_f6qwc3",
+      "details": "{\"name\":\"Dr. Naveen Sharma\",\"email\":\"naveen.sharma@university.edu\",\"role\":\"Reviewer\",\"department\":\"School of Computing & AI\"}",
+      "previousState": null,
+      "newState": null,
+      "ipAddress": "::1",
+      "userAgent": "Internal",
+      "status": "SUCCESS",
+      "createdAt": "2026-09-12T06:32:53.215Z",
+      "updatedAt": "2026-09-12T06:32:53.215Z"
+    },
+    {
+      "id": "aud_1789194813011_r2qiymp",
+      "timestamp": "2026-09-12T06:33:33.011Z",
+      "actorId": "use_1789194773212_f6qwc3",
+      "actorEmail": "naveen.sharma@university.edu",
+      "actorRole": "Reviewer",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "entity": "User",
+      "entityId": "use_1789194773212_f6qwc3",
+      "details": "User signed in successfully",
+      "previousState": null,
+      "newState": null,
+      "ipAddress": "::1",
+      "userAgent": "Internal",
+      "status": "SUCCESS",
+      "createdAt": "2026-09-12T06:33:33.011Z",
+      "updatedAt": "2026-09-12T06:33:33.011Z"
+    },
+    {
+      "id": "aud_1789194818912_favhl4e",
+      "timestamp": "2026-09-12T06:33:38.912Z",
+      "actorId": "usr_admin_master",
+      "actorEmail": "admin@university.edu",
+      "actorRole": "Compliance Admin",
+      "action": "AUTH_LOGIN_SUCCESS",
+      "entity": "User",
+      "entityId": "usr_admin_master",
+      "details": "User signed in successfully",
+      "previousState": null,
+      "newState": null,
+      "ipAddress": "::1",
+      "userAgent": "Internal",
+      "status": "SUCCESS",
+      "createdAt": "2026-09-12T06:33:38.912Z",
+      "updatedAt": "2026-09-12T06:33:38.912Z"
+    }
+  ],
+  "notifications": [],
+  "settings": {
+    "aiConfidenceThreshold": 80,
+    "slaTargetHours": 48,
+    "geminiModel": "gemini-3.6-flash",
+    "allowedMimeTypes": [
+      "application/pdf",
+      "image/jpeg",
+      "image/png",
+      "application/msword",
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    ],
+    "malwareScanningEnabled": true,
+    "requireReviewBelowConfidence": 85,
+    "autoRouteExceptions": true
+  }
+}
